@@ -27,18 +27,17 @@ function dataHandling2(){
   //Konversi tipe data tanggal
   var arrTanggal=[];
   var convertTanggal;
-  for(var i = 0; i < tanggal.length; i++){
-    convertTanggal = Number(tanggal[i]);
+  for(var tgl = 0; tgl < tanggal.length; tgl++){
+    convertTanggal = tanggal[tgl];
     arrTanggal.push(convertTanggal);
   }
-
   //Mengurut tanggal descending
   arrTanggal.sort(
     function(value1, value2){
       return value1 < value2
     }
   )
-  console.log(arrTanggal[2]);
+  console.log(arrTanggal);
   console.log(tanggal.join("-"));//menggabungkan tanggal dengan "-"
   console.log(input[1].slice(0,15)); // memotong elemen input ke-2
 }
