@@ -6,7 +6,7 @@ function mengelompokkanAngka(arr) {
   var ganjil=[];
   var genap=[];
   var kelipatan3=[];
-  var gabung=[];
+  var result=[];
   for(var i=0; i<arr.length;i++){
 
     if(arr[i]%3===0){
@@ -17,8 +17,8 @@ function mengelompokkanAngka(arr) {
       ganjil.push(arr[i]);
     }
   }
-  gabung.push(genap, ganjil, kelipatan3);
-  return gabung;
+  result.push(genap, ganjil, kelipatan3);
+  return result;
 }
 
 // TEST CASES
