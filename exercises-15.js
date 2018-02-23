@@ -1,5 +1,6 @@
 function groupAnimals(animals) {
   var a=[]; var c=[]; var k=[]; var u=[]; var result=[];
+  var result=[];
   animals.sort();
   for(var i=0;i<animals.length;i++){
     if(animals[i][0] === 'a'){
@@ -12,12 +13,12 @@ function groupAnimals(animals) {
       u.push(animals[i]);
     }
   }
-  result.push(a, c, k, u);
+  result.push(a,c,k,u);
   return result;
 }
 
 // TEST CASES
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
-// [ ['ayam', 'anoa'], ['cacing'], ['kuda'] ]
+// [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
 // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda'], ['unta'] ]
